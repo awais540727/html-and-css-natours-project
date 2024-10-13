@@ -1,0 +1,72 @@
+/* Media Queries for Mobile Responsiveness */
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    padding: 5rem 4rem;
+
+    // .col-1-of-2 {
+    //   width: 100%;
+    // }
+
+    &__list {
+      text-align: center;
+    }
+
+    &__item {
+      display: block;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 5rem 3rem; /* Adjusted padding for tablets and small screens */
+
+    .col-1-of-2 {
+      width: 100%;
+    }
+
+    &__logo {
+      width: 10rem; /* Smaller logo for mobile */
+    }
+
+    &__navigation {
+      display: block; /* Stack items vertically */
+      text-align: center; /* Center align for mobile */
+    }
+
+    &__item {
+      display: block; /* Stack items vertically */
+      margin-bottom: 1rem; /* Add space between items */
+      margin-right: 0; /* Remove right margin */
+    }
+
+    &__copyright {
+      width: 100%; /* Full width for mobile */
+      float: none; /* Remove float */
+      text-align: center; /* Center align */
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer {
+    padding: 3rem 1rem; /* Further reduce padding for small devices */
+
+    .col-1-of-2 {
+      width: 100%;
+    }
+    &__logo {
+      width: 8rem; /* Smaller logo for very small screens */
+    }
+
+    &__copyright {
+      text-align: center;
+      font-size: 1.2rem; /* Smaller font size for mobile */
+      padding-top: 1.5rem;
+      //   width: 60%;
+    }
+  }
+}
